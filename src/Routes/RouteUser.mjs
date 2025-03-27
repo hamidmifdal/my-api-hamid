@@ -9,6 +9,7 @@ router.post("/user",Controllers.CreateUser);
 router.get("user/:id",Controllers.GetUser);
 router.post('/login',Controllers.Signin);
 router.get('/protected',authenticateToken ,_protected)
+// router.get('/profile',authenticateToken, Controllers.Profile)
 
 
 export default router;
